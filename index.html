@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <link rel="stylesheet" href="style_index.css">
+            <title>Reservia</title>
+        </head>
+
+        <body>
+            <nav>
+                <img 
+                    class="logo" 
+                    src="images/logo/reservia.svg"
+                    height="40px"
+                    width="160px">
+
+                    <ul class="top_bar">
+                        <li><a href="">Hébergements</a></li>
+                        <li><a href="">Activités</a></li>
+                        <li><a href="" class="inscription"> S'inscrire</a></li>
+                    </ul>
+            </nav>
+            
+            <div class="content">
+
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <h3>En plein centre ville ou en pleine nature</h3>
+
+                <form class="city">
+                    <div class="search_bar">
+                        <input type="button" class="location_button">
+                        <input type="text" class="city_textfield">
+                        <input type="submit" value="Rechercher" class="search_button">
+                    </div>
+
+                    <div class="filters">
+                        <p>Filtres</p>
+
+                        <div class="eco">
+                            <input type="checkbox" id="eco" name="eco">
+                            <label for="eco">Économique</label>
+                        </div>
+
+                        <div class="family">
+                            <input type="checkbox" id="family" name="family">
+                            <label for="family">Familial</label>
+                        </div>
+
+                        <div class="romantic">
+                            <input type="checkbox" id="romantic" name="romantic">
+                            <label for="romantic">Romantique</label>
+                        </div>
+                        
+                        <div class="animals">
+                            <input type="checkbox" id="animals" name="animals">
+                            <label for="animals">Animaux autorisés</label>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="city_info">
+                    <p class="info_logo">i</p><p>Plus de 500 logements sont disponible dans cette ville</p>
+                </div>
+            
+            </div>
+        </body>
+    </html>
