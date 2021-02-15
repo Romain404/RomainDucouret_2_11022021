@@ -100,6 +100,8 @@ nav a:hover
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
     border: none;
+    font-size: 1.2em;
+    color: white;
 }
 
 .city
