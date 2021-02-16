@@ -9,9 +9,20 @@
     font-family: 'Raleway-Thin';
     src:url('polices/Raleway-Thin.ttf');
 }
+
+html
+{
+    min-width: 915px;
+}
+
 *
 {
     font-family: 'Raleway';
+}
+
+.content
+{
+    
 }
 body
 {
@@ -198,4 +209,78 @@ input[type=checkbox] {
     border-left: none;
     margin-left: 10px;
     margin-right: 10px;
+}
+
+/* Liste des hébergements */
+
+.hebergement_list
+{
+    background-color: #F2F2F2;
+    width: 60%;
+    border-radius: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    max-width: 900px;
+    min-width: 900px;
+
+}
+
+.hebergement_list h1
+{
+    font-size: 1.3em;
+}
+
+.hebergement_list ul
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding-inline-start: 0;
+
+}
+
+.hebergement_list li
+{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 200px;
+    border-radius: 20px;
+    background-color: white;
+    list-style-type: none;
+    padding: 5px;
+    margin-bottom: 40px;
+    margin-right: 40px;
+}
+
+.room_image
+{
+    width: 250px;
+    height: 120px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.hebergement_list h2
+{
+    font-size: 1.1em;
+    margin-bottom: 0;
+    margin-left: 10px;
+}
+
+.hebergement_list h3
+{
+    font-size: 0.9em;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 7px;
+}
+
+.classement
+{
+    width: 50px;
+    height: 9px;
+    margin-top: 0;
+    margin-left: 10px;
 }
