@@ -1,3 +1,5 @@
+/* Fonts */
+
 @font-face
 {
     font-family: 'Raleway';
@@ -12,7 +14,9 @@
 
 html
 {
-    min-width: 915px;
+    min-width: 1600px;
+    position: absolute;
+
 }
 
 *
@@ -22,7 +26,7 @@ html
 
 .content
 {
-    
+
 }
 body
 {
@@ -33,6 +37,9 @@ h3
 {
     font-family: 'Raleway-Thin';
 }
+
+/* Navigation */
+
 nav
 {
     display: flex;
@@ -79,6 +86,8 @@ nav a:hover
     padding: 20px;
 }
 
+/* Search Bar */ 
+
 .search_bar
 {
     display: flex;
@@ -120,6 +129,8 @@ nav a:hover
     display: flex;
     flex-direction: column;
 }
+
+/* Filters */
 
 .filters
 {
@@ -211,7 +222,12 @@ input[type=checkbox] {
     margin-right: 10px;
 }
 
-/* Liste des hébergements */
+/* Rooms list */
+
+.hebergement
+{
+    display: flex;
+}
 
 .hebergement_list
 {
@@ -224,10 +240,11 @@ input[type=checkbox] {
     padding-bottom: 30px;
     max-width: 900px;
     min-width: 900px;
-
+    margin-right: 50px;
+    max-height: 600px;
 }
 
-.hebergement_list h1
+.hebergement_list h1, .most_popular h1, .activities h1
 {
     font-size: 1.3em;
 }
@@ -262,14 +279,14 @@ input[type=checkbox] {
     border-top-left-radius: 20px;
 }
 
-.hebergement_list h2
+.hebergement_list h2, .most_popular h2
 {
     font-size: 1.1em;
     margin-bottom: 0;
     margin-left: 10px;
 }
 
-.hebergement_list h3
+.hebergement_list h3, .most_popular h3
 {
     font-size: 0.9em;
     margin-left: 10px;
@@ -283,4 +300,131 @@ input[type=checkbox] {
     height: 9px;
     margin-top: 0;
     margin-left: 10px;
+}
+
+/* Most Popular */
+
+.most_popular
+{
+    background-color: #F2F2F2;
+    width: 430px;
+    border-radius: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    max-height: 600px;
+}
+
+.most_popular ul
+{
+    display: flex;
+    flex-direction: column;
+    padding-inline-start: 0;
+}
+
+.most_popular li
+{
+    list-style-type: none;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    padding: 5px;
+    margin-bottom: 40px;
+
+}
+
+.popular_room_image
+{
+    width: 140px;
+    height: 140px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.classement_most_popular
+{
+    width: 50px;
+    height: 9px;
+    margin-left: 10px;
+    margin-top: 40px;
+}
+
+.most_popular_title
+{
+    margin-bottom: 50px;
+}
+
+/* Activities */
+
+.activities
+{
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
+    margin-bottom: 500px;  /* A ENLEVER */
+}
+
+.activitie_image_large
+{
+    width: 350px;
+    height: 450px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.activitie_image_medium
+{
+    width: 350px;
+    height: 205px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.activitie_image_small
+{
+    width: 350px;
+    height: 150px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.activities a
+{
+    box-shadow: -1px 2px 27px 0px rgba(189,189,189,0.65);
+    width: 350px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    transition-duration: 0.6s;
+    height: fit-content;
+    margin: 20px;
+}
+
+.activities ul
+{
+    display: flex;
+    padding-inline-start: 0; 
+    list-style-type: none;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-height: 600px;
+    max-width: 1463px;
+}
+
+.activities h1
+{
+    font-size: 1.3em;
+    margin-left: 20px;
+}
+.activities h2
+{
+    font-size: 1.1em;
+    margin-left: 20px;
+}
+
+.activities a:hover
+{
+    box-shadow: none;
+    background-color: #F2F2F2;
 }
