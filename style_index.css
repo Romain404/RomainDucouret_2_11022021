@@ -100,6 +100,8 @@ nav a:hover
     border-bottom-left-radius: 12px;
     border-top-left-radius: 12px;
     border: solid 2px #F2F2F2;
+    background: url("images/logo/location_logo.png") no-repeat center;
+    background-color: #F2F2F2;
 }
 
 .search_button
@@ -173,6 +175,31 @@ input[type=checkbox] {
     opacity: 0.8;
     margin: 0;
 }
+
+#romantic
+{
+    background: url("images/logo/romantic_logo.PNG") no-repeat center;
+    background-color: #DEEBFF;
+}
+
+#family
+{
+    background: url("images/logo/familial_logo.PNG") no-repeat center;
+    background-color: #DEEBFF;
+}
+
+#eco
+{
+    background: url("images/logo/cash_logo.PNG") no-repeat center;
+    background-color: #DEEBFF;
+}
+
+#animals
+{
+    background: url("images/logo/animals_logo.png") no-repeat center;
+    background-color: #DEEBFF;
+}
+
 
 #eco:checked, #family:checked, #romantic:checked, #animals:checked
 {
@@ -304,7 +331,18 @@ input[type=checkbox] {
     padding-bottom: 30px;
     max-height: 600px;
 }
+ .most_popular_title
+ {
+     display: flex;
+ }
 
+ .most_popular_title img
+ {
+     width: 25px;
+     height: 25px;
+     align-self: center;
+     margin-left: 180px;    
+}
 .most_popular ul
 {
     display: flex;
