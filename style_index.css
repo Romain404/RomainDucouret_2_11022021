@@ -19,9 +19,10 @@
 
 body
 {
-    margin: 0;
-    padding: 20px;
+    margin: auto;
+    width: 1550px;
 }
+
 h3
 {
     font-family: 'Raleway-Thin';
@@ -239,9 +240,25 @@ input[type=checkbox] {
 
 /* Rooms list */
 
-.hebergement
+#hebergement
 {
     display: flex;
+}
+
+.hebergement_list a
+{
+    text-decoration: none;
+    color: black;
+    width: 260px;
+    height: 210px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    transition-duration: 0.2s;
+}
+
+.hebergement_list a:hover
+{
+    box-shadow: -1px 2px 27px 0px rgba(189,189,189,0.65);
 }
 
 .hebergement_list
@@ -269,6 +286,7 @@ input[type=checkbox] {
     display: flex;
     flex-wrap: wrap;
     padding-inline-start: 0;
+    justify-content: space-around;
 
 }
 
@@ -330,12 +348,29 @@ input[type=checkbox] {
     padding-bottom: 30px;
     max-height: 600px;
 }
- .most_popular_title
+
+.most_popular a
+{
+    text-decoration: none;
+    color: black;
+    border-radius: 20px;
+    width: 400px;
+    height: 150px;
+    margin-bottom: 40px;
+    transition-duration: 0.2s;
+}
+
+.most_popular a:hover
+{
+    box-shadow: -1px 2px 27px 0px rgba(189,189,189,0.65);
+}
+
+.most_popular_title
  {
      display: flex;
  }
 
- .most_popular_title img
+.most_popular_title img
  {
      width: 25px;
      height: 25px;
@@ -378,7 +413,7 @@ input[type=checkbox] {
 
 /* Activities */
 
-.activities
+#activities
 {
     display: flex;
     margin-top: 40px;
@@ -409,10 +444,10 @@ input[type=checkbox] {
     border-top-right-radius: 20px;
 }
 
-.activities a
+#activities a
 {
     box-shadow: -1px 2px 27px 0px rgba(189,189,189,0.65);
-    width: 350px;
+    width: 347px;
     border-radius: 20px;
     text-decoration: none;
     color: black;
@@ -423,7 +458,7 @@ input[type=checkbox] {
     margin-right: 40px;
 }
 
-.activities ul
+#activities ul
 {
     display: flex;
     padding-inline-start: 0; 
@@ -431,21 +466,20 @@ input[type=checkbox] {
     flex-wrap: wrap;
     flex-direction: column;
     max-height: 600px;
-    max-width: 1463px;
 }
 
-.activities h1
+#activities h1
 {
     font-size: 1.3em;
     margin-left: 20px;
 }
-.activities h2
+#activities h2
 {
     font-size: 1.1em;
     margin-left: 20px;
 }
 
-.activities a:hover
+#activities a:hover
 {
     box-shadow: none;
     background-color: #F2F2F2;
@@ -462,8 +496,8 @@ footer
 {
     display: flex;
     background-color: #F2F2F2;
-    width: 100%;
     padding: 20px;
+    padding-left: 40px;
 }
 
 footer a
@@ -490,4 +524,27 @@ footer div
 footer a:hover
 {
     text-decoration: underline;
+}
+
+
+/* media responsive */
+
+/* Mobile */
+
+@media all and (max-width: 400px)
+{
+    body
+    {
+        background-color: black;
+    }
+
+}
+
+/* Tablette */
+
+@media all and (max-width 1024px)
+{
+    
+
+    
 }
