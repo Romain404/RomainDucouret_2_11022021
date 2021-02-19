@@ -30,6 +30,9 @@ h3
 
 /* Navigation */
 
+.logo
+{}
+
 nav
 {
     display: flex;
@@ -531,7 +534,7 @@ footer a:hover
 
 /* Mobile */
 
-@media all and (max-width: 400px)
+@media all and (max-width: 768px)
 {
     body
     {
