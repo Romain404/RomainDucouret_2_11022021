@@ -17,22 +17,12 @@
     font-family: 'Raleway';
 }
 
-body
-{
-    margin: auto;
-    width: 1550px;
-}
-
 h3
 {
     font-family: 'Raleway-Thin';
 }
 
 /* Navigation */
-
-.logo
-{}
-
 nav
 {
     display: flex;
@@ -40,19 +30,12 @@ nav
     align-items: center;
 }
 
-nav ul
+.top_bar
 {
     display: flex;
     justify-content: flex-end;
     width: 100%;
-    list-style-type: none;
     padding-right: 20px;
-}
-
-nav li
-{
-    list-style-type: none;
-    margin: 10px;
 }
 
 nav a
@@ -73,10 +56,25 @@ nav a:hover
 {
     color: #0065FC;
 }
-
+.logo
+{
+    height: 60px;
+    width: 160px;
+}
+.content, nav
+{
+    margin: auto;
+    width: 1550px;
+}
 .content
 {
     padding: 20px;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
 }
 
 /* Search Bar */ 
@@ -106,6 +104,7 @@ nav a:hover
     border: solid 2px #F2F2F2;
     background: url("images/logo/location_logo.png") no-repeat center;
     background-color: #F2F2F2;
+    min-width: 50px;
 }
 
 .search_button
@@ -289,7 +288,8 @@ input[type=checkbox] {
     display: flex;
     flex-wrap: wrap;
     padding-inline-start: 0;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-top: 30px;
 
 }
 
@@ -343,10 +343,10 @@ input[type=checkbox] {
 .most_popular
 {
     background-color: #F2F2F2;
-    width: 400px;
+    min-width: 479px;
+    max-width: 479px;
     border-radius: 20px;
     padding-left: 40px;
-    padding-right: 40px;
     padding-top: 30px;
     padding-bottom: 30px;
     max-height: 600px;
@@ -357,10 +357,10 @@ input[type=checkbox] {
     text-decoration: none;
     color: black;
     border-radius: 20px;
-    width: 400px;
     height: 150px;
     margin-bottom: 40px;
     transition-duration: 0.2s;
+    margin-right: 40px;
 }
 
 .most_popular a:hover
@@ -378,7 +378,7 @@ input[type=checkbox] {
      width: 25px;
      height: 25px;
      align-self: center;
-     margin-left: 180px;    
+     margin-left: 216px;    
 }
 .most_popular ul
 {
@@ -421,6 +421,7 @@ input[type=checkbox] {
     display: flex;
     margin-top: 40px;
     flex-direction: column;
+    max-width: 1522px;
 }
 
 .activitie_image_large
@@ -534,18 +535,28 @@ footer a:hover
 
 /* Mobile */
 
-@media all and (max-width: 768px)
+@media screen and (max-width: 768px)
 {
-    body
+    #hebergement
     {
-        background-color: black;
+        display: flex;
+        flex-direction: column-reverse;
     }
 
+    .hebergement_list
+    {
+        flex-direction: column;
+    }
+
+    .top_bar
+    {
+        flex-wrap: wrap;
+    }
 }
 
 /* Tablette */
 
-@media all and (max-width 1024px)
+@media screen and (max-width: 1024px)
 {
     
 }
