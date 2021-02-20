@@ -343,7 +343,6 @@ input[type=checkbox] {
 .most_popular
 {
     background-color: #F2F2F2;
-    min-width: 479px;
     max-width: 479px;
     border-radius: 20px;
     padding-left: 40px;
