@@ -141,7 +141,7 @@ body
 .city_info
 {
     display: flex;
-    margin-top: 10px;
+    margin: 10px;
 }
 
 .info_logo
@@ -370,14 +370,15 @@ input[type=checkbox] {
 .most_popular_title
  {
      display: flex;
+     width: 366px;
  }
 
-.most_popular_title img
+.logo_most_popular
  {
      width: 25px;
      height: 25px;
      align-self: center;
-     margin-left: 216px;    
+     margin-left: 140px; 
 }
 .most_popular ul
 {
