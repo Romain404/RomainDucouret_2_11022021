@@ -144,27 +144,29 @@ body
     align-items: center;
 }
 
+.filters_list
+{
+    display: flex;
+}
+
 .filters p
 {
     margin-right: 30px;
+    font-family: 'Raleway-Bold';
 }
 
 .city_info
 {
     display: flex;
     margin: 10px;
+    align-items: center;
 }
 
 .info_logo
 {
-    color: #0065FC;
+    width: 20px;
+    height: 20px;
     margin-right: 10px;
-    border: solid 1px gray;
-    border-radius: 15px;
-    margin: 10px;
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-top: 6px;
 }
 
 
@@ -249,6 +251,7 @@ input[type=checkbox] {
     border-left: none;
     margin-left: 10px;
     margin-right: 10px;
+    height: 34px;
 }
 
 /* Rooms list */
@@ -265,7 +268,7 @@ input[type=checkbox] {
     width: 260px;
     height: 210px;
     margin-bottom: 40px;
-    border-radius: 20px;
+    border-radius: 25px;
     transition-duration: 0.2s;
 }
 
@@ -311,7 +314,7 @@ input[type=checkbox] {
     flex-direction: column;
     width: 250px;
     height: 200px;
-    border-radius: 20px;
+    border-radius: 25px;
     background-color: white;
     list-style-type: none;
     padding: 5px;
@@ -332,6 +335,11 @@ input[type=checkbox] {
     font-size: 1.1em;
     margin-bottom: 0;
     margin-left: 10px;
+}
+.hebergement_list p
+{
+    font-family: 'Raleway-Bold';
+    margin-left: 20px;
 }
 
 .hebergement_list h3, .most_popular h3
@@ -367,7 +375,7 @@ input[type=checkbox] {
 {
     text-decoration: none;
     color: black;
-    border-radius: 20px;
+    border-radius: 25px;
     height: 150px;
     margin-bottom: 40px;
     transition-duration: 0.2s;
@@ -403,7 +411,7 @@ input[type=checkbox] {
 {
     list-style-type: none;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 25px;
     display: flex;
     padding: 5px;
     margin-bottom: 40px;
@@ -416,6 +424,7 @@ input[type=checkbox] {
     height: 140px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    max-height: 140px;
 }
 
 .classement_most_popular
@@ -603,16 +612,170 @@ footer a:hover
     h1
     {
         font-size: 1.5em;
+        margin: 20px;
     }
 
+    h3
+    {
+        margin: 20px;
+    }
+
+    .search_bar
+    {
+        margin: 20px;
+    }
     .search_button
     {
-        width: 52px;
+        width: 58px;
         border-radius: 15px;
         font-size: 0;
         background: no-repeat url("images/logo/search_logo.PNG") center;
         background-color: #0065FC;
         background-size: 18px;
+    }
+
+    .filters
+    {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 20px;
+        margin-bottom: 0;
+    }
+
+    .filters_list
+    {
+        flex-wrap: wrap;
+    }
+
+    .city_info
+    {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 0;
+    }
+
+    .eco, .family, .romantic, .animals
+    {
+        margin: 8px;
+    }
+
+    .most_popular
+    {
+        border-radius: 0;
+        padding: 10px;
+    }
+
+    .most_popular_title
+    {
+        width: auto;
+    }
+
+    .most_popular a
+    {
+        margin-bottom: 12px;
+        box-shadow: -1px 2px 10px 0px rgba(189,189,189,0.65);
+        transition-duration: 0.4s;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .most_popular li
+    {
+        padding-right: 25px;
+    }
+
+    .logo_most_popular
+    {
+        margin-right: 10px;
+        margin-left: auto;
+    }
+
+    .most_popular a:hover
+    {
+        box-shadow: none;
+    }
+    .hebergement_list
+    {
+        background: none;
+    }
+
+    .content
+    {
+        padding: 0;
+    }
+
+    .hebergement_list ul
+    {
+        flex-direction: column;
+    }
+
+    .room_image
+    {
+        width: 360px;
+    }
+
+    .hebergement_list a
+    {
+        width: 370px;
+        box-shadow: -1px 2px 10px 0px rgba(189,189,189,0.65);
+        margin-bottom: 15px;
+        transition-duration: 0.4s;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hebergement_list a:hover
+    {
+        box-shadow: none;
+    }
+
+    .hebergement_list
+    {
+        padding: 0;
+        max-width: 400px;
+        min-width: 400px;
+        width: auto;
+        max-height: none;
+    }
+
+    #activities
+    {
+        margin: 15px;
+    }
+
+    #activities ul 
+    {
+        flex-wrap: nowrap;
+        max-height: none;
+    }
+
+    #activities a
+    {
+        margin-bottom: 20px;
+        width: 370px;
+    }
+
+    .activitie_image_large, .activitie_image_medium, .activitie_image_small
+    {
+        width: 370px;
+        height: 120px;
+    }
+
+    footer
+    {
+        flex-direction: column;
+    }
+
+    footer h1
+    {
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    footer li
+    {
+        font-size: 1em;
+        color:darkslategrey;
     }
 }
 
