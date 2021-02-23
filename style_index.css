@@ -12,6 +12,12 @@
     src:url('polices/Raleway-Thin.ttf');
 }
 
+@font-face
+{
+    font-family: 'Raleway-Bold';
+    src:url('polices/Raleway-Bold.ttf')
+}
+
 *
 {
     font-family: 'Raleway';
@@ -20,6 +26,11 @@
 h3
 {
     font-family: 'Raleway-Thin';
+}
+
+h1
+{
+    font-family: 'Raleway-Bold';
 }
 
 /* Navigation */
@@ -83,14 +94,14 @@ body
 {
     display: flex;
     height: 50px;
+    border: solid 1px #F2F2F2;
+    border-radius: 15px;
 }
 
 .city_textfield
 {
     width: 300px;
-    border-left: none;
-    border-right: none;
-    border: solid 2px #f2f2f2;
+    border: none;
     font-size: 1.2em;
     padding-left: 10px;
 }
@@ -281,6 +292,7 @@ input[type=checkbox] {
 .hebergement_list h1, .most_popular h1, .activities h1
 {
     font-size: 1.3em;
+    font-family: 'Raleway-Bold';
 }
 
 .hebergement_list ul
@@ -476,6 +488,7 @@ input[type=checkbox] {
 {
     font-size: 1.3em;
     margin-left: 20px;
+    font-family: 'Raleway-Bold';
 }
 #activities h2
 {
@@ -494,6 +507,7 @@ input[type=checkbox] {
 footer h1
 {
     font-size: 1.1em;
+    font-family: 'Raleway-Bold';
 }
 
 footer
@@ -579,6 +593,26 @@ footer a:hover
     nav a 
     {
         border-top: none;
+    }
+
+    nav
+    {
+        padding: 20px;
+    }
+
+    h1
+    {
+        font-size: 1.5em;
+    }
+
+    .search_button
+    {
+        width: 52px;
+        border-radius: 15px;
+        font-size: 0;
+        background: no-repeat url("images/logo/search_logo.PNG") center;
+        background-color: #0065FC;
+        background-size: 18px;
     }
 }
 
