@@ -39,6 +39,7 @@ nav
     display: flex;
     width: 100%;
     align-items: center;
+    padding-top: 5px;
 }
 
 .top_bar
@@ -66,11 +67,14 @@ nav a:hover
 .inscription
 {
     color: #0065FC;
+    margin-left: 1040px;
+    font-family: 'Raleway-Bold';
 }
 .logo
 {
     height: 60px;
     width: 160px;
+    margin: 10px;
 }
 .content, nav
 {
@@ -96,6 +100,7 @@ body
     height: 50px;
     border: solid 1px #F2F2F2;
     border-radius: 15px;
+    max-width: 530px;
 }
 
 .city_textfield
@@ -564,6 +569,11 @@ footer a:hover
     {
         max-width: 600px;
     }
+    .logo
+    {
+        align-self: baseline;
+    }
+    
     #hebergement
     {
         display: flex;
@@ -577,12 +587,32 @@ footer a:hover
 
     .top_bar
     {
-        flex-wrap: wrap;
-        flex-direction: column-reverse;
+        padding: 0;
+       justify-content: space-around;
+       margin-bottom: 10px;
+    }
+
+    .top_bar a
+    {
+        border-bottom: solid 3px #F2F2F2;
+        padding-bottom: 15px;
+        width: 50%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .top_bar a:hover
+    {
+        border-top: none;
+        border-bottom: solid 3px #0065FC ;
     }
     .content, nav
     {
         width: auto;
+    }
+    .inscription
+    {
+        margin-left: 120px;
     }
     .inscription:hover
     {
@@ -606,7 +636,7 @@ footer a:hover
 
     nav
     {
-        padding: 20px;
+        flex-wrap: wrap;
     }
 
     h1
@@ -623,6 +653,7 @@ footer a:hover
     .search_bar
     {
         margin: 20px;
+        margin-bottom: 0;
     }
     .search_button
     {
