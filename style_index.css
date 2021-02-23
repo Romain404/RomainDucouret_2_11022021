@@ -535,8 +535,12 @@ footer a:hover
 
 /* Mobile */
 
-@media screen and (max-width: 768px)
+@media screen and (max-width: 600px)
 {
+    body
+    {
+        max-width: 600px;
+    }
     #hebergement
     {
         display: flex;
@@ -551,6 +555,30 @@ footer a:hover
     .top_bar
     {
         flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .content, nav
+    {
+        width: auto;
+    }
+    .inscription:hover
+    {
+        border:none;
+    }
+    .ancres a:hover
+    {
+        border-bottom: solid #0065FC;
+    }
+    .ancres
+    {
+        width: 100%;
+        margin-top: 50px;
+        border-bottom: solid #F2F2F2;
+        border-top: none;
+    }
+    nav a 
+    {
+        border-top: none;
     }
 }
 
