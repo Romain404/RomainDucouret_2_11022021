@@ -395,7 +395,7 @@ input[type=checkbox] {
 .most_popular_title
  {
      display: flex;
-     width: 366px;
+     margin-right: 38px;
  }
 
 .logo_most_popular
@@ -403,7 +403,7 @@ input[type=checkbox] {
      width: 25px;
      height: 25px;
      align-self: center;
-     margin-left: 140px; 
+     margin-left: auto; 
 }
 .most_popular ul
 {
@@ -612,7 +612,8 @@ footer a:hover
     }
     .inscription
     {
-        margin-left: 120px;
+        margin-left: 90px;
+        align-self: flex-start;
     }
     .inscription:hover
     {
@@ -657,7 +658,7 @@ footer a:hover
     }
     .search_button
     {
-        width: 58px;
+        min-width: 50px;
         border-radius: 15px;
         font-size: 0;
         background: no-repeat url("images/logo/search_logo.PNG") center;
@@ -685,6 +686,11 @@ footer a:hover
         margin-top: 0;
     }
 
+    .city_textfield
+    {
+        width: 222px;
+    }
+
     .eco, .family, .romantic, .animals
     {
         margin: 8px;
@@ -698,7 +704,7 @@ footer a:hover
 
     .most_popular_title
     {
-        width: auto;
+        margin-right: 0;
     }
 
     .most_popular a
@@ -728,6 +734,8 @@ footer a:hover
     .hebergement_list
     {
         background: none;
+        margin-right: 10px;
+        margin-left: 10px;
     }
 
     .content
@@ -742,17 +750,15 @@ footer a:hover
 
     .room_image
     {
-        width: 360px;
+        min-width: 345px;
     }
 
     .hebergement_list a
     {
-        width: 370px;
+        min-width: 355px;
         box-shadow: -1px 2px 10px 0px rgba(189,189,189,0.65);
         margin-bottom: 15px;
         transition-duration: 0.4s;
-        margin-left: auto;
-        margin-right: auto;
     }
 
     .hebergement_list a:hover
@@ -769,9 +775,14 @@ footer a:hover
         max-height: none;
     }
 
+    .hebergement_list li
+    {
+        margin:0:
+    }
+
     #activities
     {
-        margin: 15px;
+        margin: 10px;
     }
 
     #activities ul 
@@ -783,13 +794,14 @@ footer a:hover
     #activities a
     {
         margin-bottom: 20px;
-        width: 370px;
+        width: auto;
+        margin-right: 0;
     }
 
     .activitie_image_large, .activitie_image_medium, .activitie_image_small
     {
-        width: 370px;
         height: 120px;
+        min-width: 355px;
     }
 
     footer
@@ -812,7 +824,110 @@ footer a:hover
 
 /* Tablette */
 
-@media screen and (max-width: 1024px)
+@media screen and (max-width: 1025px)
 {
-    
+    body
+    {
+        max-width: 1024px;
+    }
+
+    .inscription
+    {
+        margin-left: 450px;
+    }
+
+    .content, nav
+    {
+        width: auto;
+    }
+
+    .top_bar
+    {
+        width: auto;
+    }
+
+    #hebergement
+    {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+
+    .popular_room_image
+    {
+        width: 250px;
+        height: 120px;
+        max-height: none;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 20px;
+    }
+
+    .most_popular li
+    {
+        flex-direction: column;
+        width: 250px;
+        height: auto;
+        margin-bottom: 0;
+    }
+
+    .most_popular ul
+    {
+        margin-bottom: 0;
+    }
+
+    .most_popular a
+    {
+        margin-right: 0;
+        height: auto;
+        max-width: 260px;
+    }
+
+    .most_popular
+    {
+        max-height: none;
+        margin-right: 20px;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .hebergement_list
+    {
+        max-height: none;
+        min-width: 0;
+        margin-right: 0;
+    }
+
+    .classement_most_popular
+    {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .most_popular_title
+    {
+        margin-right: 0;
+    }
+    .activitie_image_large, .activitie_image_medium, .activitie_image_small
+    {
+        height: 150px;
+        width: 300px;
+    }
+
+    #activities a
+    {
+        width: 300px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    #activities ul
+    {
+        flex-direction: row;
+        justify-content: end;
+    }
+
+    #activities
+    {
+        max-width: 1024px;
+    }
+
 }
