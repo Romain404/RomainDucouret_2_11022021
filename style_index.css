@@ -922,12 +922,18 @@ footer a:hover
     #activities ul
     {
         flex-direction: row;
-        justify-content: end;
+        justify-content: center;
+        max-height: none;
     }
 
     #activities
     {
         max-width: 1024px;
+    }
+
+    #activities h1
+    {
+        text-align: center;
     }
 
 }
