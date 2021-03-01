@@ -1,57 +1,48 @@
 /* Fonts */
 
-@font-face
-{
+@font-face {
     font-family: 'Raleway';
     src:url('polices/Raleway-Medium.ttf');
 }
 
-@font-face
-{
+@font-face {
     font-family: 'Raleway-Thin';
     src:url('polices/Raleway-Thin.ttf');
 }
 
-@font-face
-{
+@font-face {
     font-family: 'Raleway-Bold';
     src:url('polices/Raleway-Bold.ttf')
 }
 
-*
-{
+* {
     font-family: 'Raleway';
 }
 
-h3
-{
+h3 {
     font-family: 'Raleway-Thin';
 }
 
-h1
-{
+h1 {
     font-family: 'Raleway-Bold';
 }
 
 /* Navigation */
-nav
-{
+nav {
     display: flex;
     width: 100%;
     align-items: center;
     padding-top: 5px;
 }
 
-.top_bar
-{
+.top_bar {
     display: flex;
     justify-content: flex-end;
     width: 100%;
     padding-right: 20px;
 }
 
-nav a
-{
+nav a {
     text-decoration: none;
     font-size: 1.2em;
     margin: 10px;
@@ -59,43 +50,39 @@ nav a
     padding-top: 20px;
 }
 
-nav a:hover
-{
+nav a:hover {
     border-top: solid #0065FC;
 }
 
-.inscription
-{
+.inscription {
     color: #0065FC;
     margin-left: 1040px;
     font-family: 'Raleway-Bold';
 }
-.logo
-{
+
+.logo {
     height: 60px;
     width: 160px;
     margin: 10px;
 }
-.content, nav
-{
+
+.content, nav {
     margin: auto;
     width: 1550px;
 }
-.content
-{
+
+.content {
     padding: 20px;
 }
 
-body
-{
+body {
     margin: 0;
     padding: 0;
 }
 
 /* Search Bar */ 
 
-.search_bar
-{
+.search_bar {
     display: flex;
     height: 50px;
     border: solid 1px #F2F2F2;
@@ -103,16 +90,14 @@ body
     max-width: 530px;
 }
 
-.city_textfield
-{
+.city_textfield {
     width: 300px;
     border: none;
     font-size: 1.2em;
     padding-left: 10px;
 }
 
-.location_button
-{
+.location_button {
     width: 50px;
     border: none;
     border-bottom-left-radius: 12px;
@@ -123,8 +108,7 @@ body
     min-width: 50px;
 }
 
-.search_button
-{
+.search_button {
     width: 170px;
     background-color: #0065FC;
     border-top-right-radius: 12px;
@@ -134,49 +118,42 @@ body
     color: white;
 }
 
-.city
-{
+.city {
     display: flex;
     flex-direction: column;
 }
 
 /* Filters */
 
-.filters
-{
+.filters {
     margin-top: 20px;
     display: flex;
     align-items: center;
 }
 
-.filters_list
-{
+.filters_list {
     display: flex;
 }
 
-.filters p
-{
+.filters p {
     margin-right: 30px;
     font-family: 'Raleway-Bold';
 }
 
-.city_info
-{
+.city_info {
     display: flex;
     margin: 10px;
     align-items: center;
 }
 
-.info_logo
-{
+.info_logo {
     width: 20px;
     height: 20px;
     margin-right: 10px;
 }
 
 
-input[type="checkbox"]
-{
+input[type="checkbox"] {
     -webkit-appearance: none;
     -moz-appearance: none;
     -ms-appearence: none;
@@ -190,51 +167,43 @@ input[type=checkbox] {
     border: 1px solid #ccc;
 }
 
-#eco, #family, #romantic, #animals
-{
+#eco, #family, #romantic, #animals {
     background-color: #DEEBFF;
     opacity: 0.8;
     margin: 0;
 }
 
 
-#romantic
-{
+#romantic {
     background: url("images/logo/romantic_logo.PNG") no-repeat center;
     background-color: #DEEBFF;
 }
 
-#family
-{
+#family {
     background: url("images/logo/familial_logo.PNG") no-repeat center;
     background-color: #DEEBFF;
 }
 
-#eco
-{
+#eco {
     background: url("images/logo/cash_logo.PNG") no-repeat center;
     background-color: #DEEBFF;
 }
 
-#animals
-{
+#animals {
     background: url("images/logo/animals_logo.png") no-repeat center;
     background-color: #DEEBFF;
 }
 
 
-#eco:hover, #family:hover, #romantic:hover, #animals:hover
-{
+#eco:hover, #family:hover, #romantic:hover, #animals:hover {
     border: none;
 }
 
-#eco:active, #eco:focus, #family:active, #family:focus, #romantic:active, #romantic:focus, #animals:active, #animals:focus, .location_button:active, .location_button:focus, .search_button:active, .search_button:focus, .city_textfield:active, .city_textfield:focus
-{
+#eco:active, #eco:focus, #family:active, #family:focus, #romantic:active, #romantic:focus, #animals:active, #animals:focus, .location_button:active, .location_button:focus, .search_button:active, .search_button:focus, .city_textfield:active, .city_textfield:focus {
     outline: none;
 }
 
-.filters label
-{
+.filters label {
    
     border-bottom-right-radius: 15px;
     border-top-right-radius: 15px;
@@ -245,8 +214,7 @@ input[type=checkbox] {
     border-left: none;
 }
 
-.eco, .family, .romantic, .animals
-{
+.eco, .family, .romantic, .animals {
     display:flex;
     border: solid 1px #D9D9D9;
     border-radius: 20px;
@@ -261,13 +229,11 @@ input[type=checkbox] {
 
 /* Rooms list */
 
-#hebergement
-{
+#hebergement {
     display: flex;
 }
 
-.hebergement_list a
-{
+.hebergement_list a {
     text-decoration: none;
     color: black;
     width: 260px;
@@ -277,13 +243,11 @@ input[type=checkbox] {
     transition-duration: 0.2s;
 }
 
-.hebergement_list a:hover
-{
+.hebergement_list a:hover {
     box-shadow: -1px 2px 27px 0px rgba(189,189,189,0.65);
 }
 
-.hebergement_list
-{
+.hebergement_list {
     background-color: #F2F2F2;
     width: 60%;
     border-radius: 20px;
@@ -297,14 +261,12 @@ input[type=checkbox] {
     max-height: 600px;
 }
 
-.hebergement_list h1, .most_popular h1, .activities h1
-{
+.hebergement_list h1, .most_popular h1, .activities h1 {
     font-size: 1.3em;
     font-family: 'Raleway-Bold';
 }
 
-.hebergement_list ul
-{
+.hebergement_list ul {
     display: flex;
     flex-wrap: wrap;
     padding-inline-start: 0;
@@ -313,8 +275,7 @@ input[type=checkbox] {
 
 }
 
-.hebergement_list li
-{
+.hebergement_list li {
     display: flex;
     flex-direction: column;
     width: 250px;
@@ -327,36 +288,32 @@ input[type=checkbox] {
     margin-right: 40px;
 }
 
-.room_image
-{
+.room_image {
     width: 250px;
     height: 120px;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
 }
 
-.hebergement_list h2, .most_popular h2
-{
+.hebergement_list h2, .most_popular h2 {
     font-size: 1.1em;
     margin-bottom: 0;
     margin-left: 10px;
 }
-.hebergement_list p
-{
+
+.hebergement_list p {
     font-family: 'Raleway-Bold';
     margin-left: 20px;
 }
 
-.hebergement_list h3, .most_popular h3
-{
+.hebergement_list h3, .most_popular h3 {
     font-size: 0.9em;
     margin-left: 10px;
     margin-top: 5px;
     margin-bottom: 7px;
 }
 
-.classement
-{
+.classement {
     width: 50px;
     height: 9px;
     margin-top: 0;
@@ -365,8 +322,7 @@ input[type=checkbox] {
 
 /* Most Popular */
 
-.most_popular
-{
+.most_popular {
     background-color: #F2F2F2;
     max-width: 479px;
     border-radius: 20px;
@@ -376,8 +332,7 @@ input[type=checkbox] {
     max-height: 600px;
 }
 
-.most_popular a
-{
+.most_popular a {
     text-decoration: none;
     color: black;
     border-radius: 25px;
@@ -387,44 +342,38 @@ input[type=checkbox] {
     margin-right: 40px;
 }
 
-.most_popular a:hover
-{
+.most_popular a:hover {
     box-shadow: -1px 2px 27px 0px rgba(189,189,189,0.65);
 }
 
-.most_popular_title
- {
-     display: flex;
-     margin-right: 38px;
- }
-
-.logo_most_popular
- {
-     width: 25px;
-     height: 25px;
-     align-self: center;
-     margin-left: auto; 
+.most_popular_title {
+    display: flex;
+    margin-right: 38px;
 }
-.most_popular ul
-{
+
+.logo_most_popular {
+    width: 25px;
+    height: 25px;
+    align-self: center;
+    margin-left: auto; 
+}
+
+.most_popular ul {
     display: flex;
     flex-direction: column;
     padding-inline-start: 0;
 }
 
-.most_popular li
-{
+.most_popular li {
     list-style-type: none;
     background-color: white;
     border-radius: 25px;
     display: flex;
     padding: 5px;
     margin-bottom: 40px;
-
 }
 
-.popular_room_image
-{
+.popular_room_image {
     width: 140px;
     height: 140px;
     border-top-left-radius: 20px;
@@ -432,8 +381,7 @@ input[type=checkbox] {
     max-height: 140px;
 }
 
-.classement_most_popular
-{
+.classement_most_popular {
     width: 50px;
     height: 9px;
     margin-left: 10px;
@@ -442,40 +390,35 @@ input[type=checkbox] {
 
 /* Activities */
 
-#activities
-{
+#activities {
     display: flex;
     margin-top: 40px;
     flex-direction: column;
     max-width: 1522px;
 }
 
-.activitie_image_large
-{
+.activitie_image_large {
     width: 350px;
     height: 450px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
-.activitie_image_medium
-{
+.activitie_image_medium {
     width: 350px;
     height: 205px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
-.activitie_image_small
-{
+.activitie_image_small {
     width: 350px;
     height: 150px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
-#activities a
-{
+#activities a {
     box-shadow: -1px 2px 27px 0px rgba(189,189,189,0.65);
     width: 347px;
     border-radius: 20px;
@@ -488,8 +431,7 @@ input[type=checkbox] {
     margin-right: 40px;
 }
 
-#activities ul
-{
+#activities ul {
     display: flex;
     padding-inline-start: 0; 
     list-style-type: none;
@@ -498,63 +440,55 @@ input[type=checkbox] {
     max-height: 600px;
 }
 
-#activities h1
-{
+#activities h1 {
     font-size: 1.3em;
     margin-left: 20px;
     font-family: 'Raleway-Bold';
 }
-#activities h2
-{
+
+#activities h2 {
     font-size: 1.1em;
     margin-left: 20px;
 }
 
-#activities a:hover
-{
+#activities a:hover {
     box-shadow: none;
     background-color: #F2F2F2;
 }
 
 /* Footer */
 
-footer h1
-{
+footer h1 {
     font-size: 1.1em;
     font-family: 'Raleway-Bold';
 }
 
-footer
-{
+footer {
     display: flex;
     background-color: #F2F2F2;
     padding: 20px;
     padding-left: 40px;
 }
 
-footer a
-{
+footer a {
     text-decoration: none;
     color: black;
 }
-footer ul
-{
+
+footer ul {
     padding-inline-start: 0;
 }
 
-footer li
-{
+footer li {
     list-style-type: none;
     margin-bottom: 15px;
 }
 
-footer div 
-{
+footer div  {
     margin-right: 100px;
 }
 
-footer a:hover
-{
+footer a:hover {
     text-decoration: underline;
 }
 
@@ -563,37 +497,30 @@ footer a:hover
 
 /* Mobile */
 
-@media screen and (max-width: 600px)
-{
-    body
-    {
-        max-width: 600px;
+@media screen and (max-width: 600px) {
+    body {
+       max-width: 600px;
     }
-    .logo
-    {
+    .logo {
         align-self: baseline;
     }
     
-    #hebergement
-    {
+    #hebergement {
         display: flex;
         flex-direction: column-reverse;
     }
 
-    .hebergement_list
-    {
+    .hebergement_list {
         flex-direction: column;
     }
 
-    .top_bar
-    {
+    .top_bar {
         padding: 0;
        justify-content: space-around;
        margin-bottom: 10px;
     }
 
-    .top_bar a
-    {
+    .top_bar a {
         border-bottom: solid 3px #F2F2F2;
         padding-bottom: 15px;
         width: 50%;
@@ -601,63 +528,56 @@ footer a:hover
         text-align: center;
     }
 
-    .top_bar a:hover
-    {
+    .top_bar a:hover {
         border-top: none;
         border-bottom: solid 3px #0065FC ;
     }
-    .content, nav
-    {
+    .content, nav {
         width: auto;
     }
-    .inscription
-    {
+    
+    .inscription {
         margin-left: 90px;
         align-self: flex-start;
     }
-    .inscription:hover
-    {
+    .inscription:hover {
         border:none;
     }
-    .ancres a:hover
-    {
+
+    .ancres a:hover {
         border-bottom: solid #0065FC;
     }
-    .ancres
-    {
+    
+    .ancres {
         width: 100%;
         margin-top: 50px;
         border-bottom: solid #F2F2F2;
         border-top: none;
     }
-    nav a 
-    {
+
+    nav a {
         border-top: none;
     }
 
-    nav
-    {
+    nav {
         flex-wrap: wrap;
     }
 
-    h1
-    {
+    h1 {
         font-size: 1.5em;
         margin: 20px;
     }
 
-    h3
-    {
+    h3 {
         margin: 20px;
     }
 
-    .search_bar
-    {
+    .search_bar {
         margin: 20px;
         margin-bottom: 0;
     }
-    .search_button
-    {
+
+    .search_button {
         min-width: 50px;
         border-radius: 15px;
         font-size: 0;
@@ -666,49 +586,41 @@ footer a:hover
         background-size: 18px;
     }
 
-    .filters
-    {
+    .filters {
         flex-direction: column;
         align-items: flex-start;
         margin: 20px;
         margin-bottom: 0;
     }
 
-    .filters_list
-    {
+    .filters_list {
         flex-wrap: wrap;
     }
 
-    .city_info
-    {
+    .city_info {
         margin-left: 20px;
         margin-right: 20px;
         margin-top: 0;
     }
 
-    .city_textfield
-    {
+    .city_textfield {
         width: 222px;
     }
 
-    .eco, .family, .romantic, .animals
-    {
+    .eco, .family, .romantic, .animals {
         margin: 8px;
     }
 
-    .most_popular
-    {
+    .most_popular {
         border-radius: 0;
         padding: 10px;
     }
 
-    .most_popular_title
-    {
+    .most_popular_title {
         margin-right: 0;
     }
 
-    .most_popular a
-    {
+    .most_popular a {
         margin-bottom: 12px;
         box-shadow: -1px 2px 10px 0px rgba(189,189,189,0.65);
         transition-duration: 0.4s;
@@ -716,58 +628,49 @@ footer a:hover
         margin-left: auto;
     }
 
-    .most_popular li
-    {
+    .most_popular li {
         padding-right: 25px;
     }
 
-    .logo_most_popular
-    {
+    .logo_most_popular {
         margin-right: 10px;
         margin-left: auto;
     }
 
-    .most_popular a:hover
-    {
+    .most_popular a:hover {
         box-shadow: none;
     }
-    .hebergement_list
-    {
+
+    .hebergement_list {
         background: none;
         margin-right: 10px;
         margin-left: 10px;
     }
 
-    .content
-    {
+    .content {
         padding: 0;
     }
 
-    .hebergement_list ul
-    {
+    .hebergement_list ul {
         flex-direction: column;
     }
 
-    .room_image
-    {
+    .room_image {
         min-width: 345px;
     }
 
-    .hebergement_list a
-    {
+    .hebergement_list a {
         min-width: 355px;
         box-shadow: -1px 2px 10px 0px rgba(189,189,189,0.65);
         margin-bottom: 15px;
         transition-duration: 0.4s;
     }
 
-    .hebergement_list a:hover
-    {
+    .hebergement_list a:hover {
         box-shadow: none;
     }
 
-    .hebergement_list
-    {
+    .hebergement_list {
         padding: 0;
         max-width: 400px;
         min-width: 400px;
@@ -775,48 +678,40 @@ footer a:hover
         max-height: none;
     }
 
-    .hebergement_list li
-    {
+    .hebergement_list li {
         margin:0:
     }
 
-    #activities
-    {
+    #activities {
         margin: 10px;
     }
 
-    #activities ul 
-    {
+    #activities ul {
         flex-wrap: nowrap;
         max-height: none;
     }
 
-    #activities a
-    {
+    #activities a {
         margin-bottom: 20px;
         width: auto;
         margin-right: 0;
     }
 
-    .activitie_image_large, .activitie_image_medium, .activitie_image_small
-    {
+    .activitie_image_large, .activitie_image_medium, .activitie_image_small {
         height: 120px;
         min-width: 355px;
     }
 
-    footer
-    {
+    footer {
         flex-direction: column;
     }
 
-    footer h1
-    {
+    footer h1 {
         margin: auto;
         margin-bottom: 20px;
     }
 
-    footer li
-    {
+    footer li {
         font-size: 1em;
         color:darkslategrey;
     }
@@ -824,36 +719,29 @@ footer a:hover
 
 /* Tablette */
 
-@media screen and (max-width: 1025px)
-{
-    body
-    {
+@media screen and (max-width: 1025px) {
+    body {
         max-width: 1024px;
     }
 
-    .inscription
-    {
+    .inscription {
         margin-left: 450px;
     }
 
-    .content, nav
-    {
+    .content, nav {
         width: auto;
     }
 
-    .top_bar
-    {
+    .top_bar {
         width: auto;
     }
 
-    #hebergement
-    {
+    #hebergement {
         flex-direction: row-reverse;
         justify-content: flex-end;
     }
 
-    .popular_room_image
-    {
+    .popular_room_image {
         width: 250px;
         height: 120px;
         max-height: none;
@@ -861,79 +749,67 @@ footer a:hover
         border-top-right-radius: 20px;
     }
 
-    .most_popular li
-    {
+    .most_popular li {
         flex-direction: column;
         width: 250px;
         height: auto;
         margin-bottom: 0;
     }
 
-    .most_popular ul
-    {
+    .most_popular ul {
         margin-bottom: 0;
     }
 
-    .most_popular a
-    {
+    .most_popular a {
         margin-right: 0;
         height: auto;
         max-width: 260px;
     }
 
-    .most_popular
-    {
+    .most_popular {
         max-height: none;
         margin-right: 20px;
         padding-right: 30px;
         padding-left: 30px;
     }
 
-    .hebergement_list
-    {
+    .hebergement_list {
         max-height: none;
         min-width: 0;
         margin-right: 0;
     }
 
-    .classement_most_popular
-    {
+    .classement_most_popular {
         margin-top: 5px;
         margin-bottom: 5px;
     }
 
-    .most_popular_title
-    {
+    .most_popular_title {
         margin-right: 0;
     }
-    .activitie_image_large, .activitie_image_medium, .activitie_image_small
-    {
+
+    .activitie_image_large, .activitie_image_medium, .activitie_image_small {
         height: 150px;
         width: 300px;
     }
 
-    #activities a
-    {
+    #activities a {
         width: 300px;
         margin-right: 20px;
         margin-bottom: 20px;
     }
 
-    #activities ul
-    {
+    #activities ul {
         flex-direction: row;
         justify-content: center;
         max-height: none;
     }
 
-    #activities
-    {
+    #activities {
         max-width: 1024px;
     }
 
-    #activities h1
-    {
+    #activities h1 {
         text-align: center;
     }
-
 }
