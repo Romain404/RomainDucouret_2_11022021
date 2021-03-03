@@ -497,10 +497,11 @@ footer a:hover {
 
 /* Mobile */
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     body {
        max-width: 600px;
     }
+    
     .logo {
         align-self: baseline;
     }
@@ -536,6 +537,11 @@ footer a:hover {
         width: auto;
     }
     
+    .link
+    {
+    transition-duration: 0.4s;
+    }
+
     .inscription {
         margin-left: 90px;
         align-self: flex-start;
@@ -719,7 +725,7 @@ footer a:hover {
 
 /* Tablette */
 
-@media screen and (max-width: 1025px) {
+/* @media only screen and (max-width: 1024px) {
     body {
         max-width: 1024px;
     }
@@ -812,4 +818,4 @@ footer a:hover {
     #activities h1 {
         text-align: center;
     }
-}
+} */
