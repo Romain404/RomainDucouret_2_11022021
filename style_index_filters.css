@@ -1,0 +1,110 @@
+/* Polices */
+@font-face {
+  font-family: "Raleway";
+  src: url("polices/Raleway-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Raleway-Thin";
+  src: url("polices/Raleway-Thin.ttf");
+}
+
+@font-face {
+  font-family: "Raleway-Bold";
+  src: url("polices/Raleway-Bold.ttf");
+}
+
+* {
+  font-family: "Raleway";
+}
+@media screen and (min-width: 320px) {
+  h3 {
+    font-family: "Raleway-Thin";
+    font-size: 1em;
+    margin-bottom: 30px;
+  }
+
+  body {
+    padding: 20px;
+  }
+
+  /* Barre de recherche */
+
+  .search_bar {
+    display: flex;
+    height: 45px;
+    border: solid 1px #f2f2f2;
+    border-radius: 15px;
+    width: fit-content;
+  }
+
+  .city_textfield {
+    border: none;
+    padding-left: 10px;
+    font-size: 1.2em;
+  }
+
+  .location_button {
+    width: 45px;
+    border: none;
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
+    border: solid 2px #f2f2f2;
+    background: url("images/logo/location_logo.png") no-repeat center;
+    background-color: #f2f2f2;
+  }
+
+  .search_button {
+    width: 45px;
+    background-color: #0065fc;
+    border-radius: 12px;
+    border: none;
+    font-size: 0;
+    background: no-repeat url("images/logo/search_logo.PNG") center;
+    background-color: #0065fc;
+    background-size: 18px;
+  }
+
+  /* Filtres */
+
+  input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearence: none;
+  }
+
+  input[type="checkbox"] {
+    border-radius: 30px;
+    height: 35px;
+    width: 35px;
+    background: #fff;
+    border: 1px solid #ccc;
+    outline: none;
+    margin: 0;
+  }
+
+  input[type="checkbox"]:hover {
+    border-color: green;
+  }
+
+  .eco,
+  .family,
+  .romantic,
+  .animals {
+    display: flex;
+    border: solid 1px #d9d9d9;
+    border-radius: 20px;
+    margin: 0;
+    padding: 0;
+    padding-right: 10px;
+    border-left: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 34px;
+    width: fit-content;
+  }
+
+  label {
+    align-self: center;
+  }
+}
