@@ -108,6 +108,8 @@
 
   label {
     align-self: center;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 
   .filters_list {
@@ -180,5 +182,30 @@
     width: 25px;
     height: 25px;
     margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* Tablettes */
+}
+
+@media screen and (min-width: 1024px) {
+  /* Ordinateurs */
+
+  .search_button {
+    background-image: none;
+    font-size: 1em;
+    width: max-content;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .filters {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
   }
 }
