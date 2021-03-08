@@ -97,10 +97,10 @@
 
   .activities ul {
     display: flex;
-    padding-inline-start: 0; 
+    padding-inline-start: 0;
     list-style-type: none;
     flex-wrap: wrap;
     flex-direction: column;
     max-height: 600px;
-}
+  }
 }
