@@ -39,7 +39,6 @@
     width: fit-content;
     border-radius: 25px;
     padding-bottom: 5px;
-    
   }
 
   .activitie_image_large,
@@ -67,4 +66,41 @@
     border-radius: 25px;
     margin-bottom: 25px;
   }
+}
+
+@media screen and (min-width: 600px) {
+  /* Tablettes */
+}
+
+@media screen and (min-width: 1024px) {
+  /* Ordinateurs */
+  .activitie_image_large {
+    width: 350px;
+    height: 450px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .activitie_image_medium {
+    width: 350px;
+    height: 205px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .activitie_image_small {
+    width: 350px;
+    height: 150px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .activities ul {
+    display: flex;
+    padding-inline-start: 0; 
+    list-style-type: none;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-height: 600px;
+}
 }
