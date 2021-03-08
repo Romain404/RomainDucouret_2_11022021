@@ -75,16 +75,13 @@
 
   input[type="checkbox"] {
     border-radius: 30px;
-    height: 35px;
-    width: 35px;
-    background: #fff;
-    border: 1px solid #ccc;
+    height: 41px;
+    width: 41px;
+    background: #deebff;
+    border: 1px solid #deebff;
     outline: none;
     margin: 0;
-  }
-
-  input[type="checkbox"]:hover {
-    border-color: green;
+    align-self: flex-end;
   }
 
   .eco,
@@ -100,11 +97,88 @@
     border-left: none;
     margin-left: 10px;
     margin-right: 10px;
-    height: 34px;
+    height: 40px;
     width: fit-content;
+    margin-bottom: 10px;
+  }
+
+  .family:checked {
+    flex-direction: row-reverse;
   }
 
   label {
     align-self: center;
+  }
+
+  .filters_list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .filters {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #romantic {
+    background: url("images/logo/romantic_logo.PNG") no-repeat center;
+    background-color: #deebff;
+  }
+
+  #family {
+    background: url("images/logo/familial_logo.PNG") no-repeat center;
+    background-color: #deebff;
+  }
+
+  #eco {
+    background: url("images/logo/cash_logo.PNG") no-repeat center;
+    background-color: #deebff;
+  }
+
+  #animals {
+    background: url("images/logo/animals_logo.png") no-repeat center;
+    background-color: #deebff;
+  }
+
+  #eco:active,
+  #eco:focus,
+  #family:active,
+  #family:focus,
+  #romantic:active,
+  #romantic:focus,
+  #animals:active,
+  #animals:focus,
+  .location_button:active,
+  .location_button:focus,
+  .search_button:active,
+  .search_button:focus,
+  .city_textfield:active,
+  .city_textfield:focus {
+    outline: none;
+  }
+
+  .eco:hover,
+  .family:hover,
+  .animals:hover,
+  .romantic:hover {
+    flex-direction: row-reverse;
+    padding-right: 0;
+    padding-left: 10px;
+    transition-duration: 1s;
+  }
+
+  .filters p {
+    font-family: 'Raleway-Bold';
+  }
+
+  .city_info {
+    display: flex;
+    align-items: center;
+  }
+
+  .info_logo {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
   }
 }
