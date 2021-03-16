@@ -20,7 +20,7 @@
 
 /* Téléphone */
 
-@media screen and (min-width: 320px) {
+
   nav {
     display: flex;
   }
@@ -32,7 +32,8 @@
 
   .logo {
     width: 100px;
-    border: none;
+    /* border: none; */
+    background-color: red;
   }
 
   body {
@@ -99,15 +100,14 @@
 
 /* Tablette */
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   .register_2 {
     display: none;
   }
-}
 
 /* Desktop */
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   .register_2 {
     display: none;
   }
