@@ -46,29 +46,15 @@ body {
   border-bottom-left-radius: 20px;
 }
 
-.most_popular ul {
-  padding-inline-start: 0;
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-}
-
-.most_popular li {
-  display: flex;
-  width: fit-content;
-  background-color: white;
-  border-radius: 25px;
-  padding: 5px;
-  margin-bottom: 15px;
-}
-
 .most_popular a {
   text-decoration: none;
   color: black;
   border-radius: 25px;
   width: fit-content;
-  height: 140px;
+  height: 150px;
   display: flex;
+  background-color: #fff;
+  margin-bottom: 25px;
 }
 
 .most_popular h1 {
@@ -91,10 +77,16 @@ body {
   width: 70px;
   height: 12px;
   margin-left: 20px;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
-@media screen and (min-width: 600px) {
+.most_popular_list {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+}
+
+@media screen and (min-width: 768px) {
   /* Tablettes */
 }
 
@@ -112,10 +104,10 @@ body {
     max-height: 140px;
   }
 
-  .most_popular a,
-  .most_popular li {
+  .most_popular a {
     width: auto;
     min-width: 380px;
+    height: 140px;
   }
 
   .most_popular li:hover {
