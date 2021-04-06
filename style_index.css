@@ -20,6 +20,10 @@
 
 /* Téléphone */
 
+header {
+  display: flex;
+}
+
 nav {
   display: flex;
   flex-direction: column;
@@ -97,19 +101,26 @@ body {
   width: auto;
   text-decoration: none;
   font-family: "Raleway-Bold";
-  display: none;
   align-self: baseline;
 }
 
-.register_2 {
-  color: #0065fc;
-  border-bottom: none;
-  width: auto;
-  text-decoration: none;
-  font-family: "Raleway-Bold";
-  margin-left: 100px;
-}
 /* Hebergements */
+
+.classement {
+  display: flex;
+  justify-content: space-between;
+  width: 70px;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.blue_star {
+  color:#0065fc;
+}
+
+.grey_star {
+  color: #e2e2e2;
+}
 
 .hebergement {
   display: flex;
@@ -162,14 +173,6 @@ body {
   margin-left: 10px;
   margin-bottom: 0px;
   margin-top: 5px;
-}
-
-.classement {
-  width: 70px;
-  height: 12px;
-  margin-top: 5px;
-  margin-left: 28px;
-  margin-bottom: 5px;
 }
 
 .hebergement_list a {
@@ -334,9 +337,15 @@ label {
   align-items: center;
 }
 
-.info_logo {
-  width: 25px;
-  height: 25px;
+.i_logo {
+  display: flex;
+  color: #0065fc;
+  padding: 6px;
+  padding-left: 11px;
+  padding-right: 11px;
+  border: solid 1px #f2f2f2;
+  border-radius: 30px;
+  justify-content: flex-start;
   margin-right: 10px;
 }
 
@@ -389,13 +398,6 @@ label {
 .most_popular h3 {
   font-size: 0.6em;
   font-family: "Raleway-Thin";
-}
-
-.classement_most_popular {
-  width: 70px;
-  height: 12px;
-  margin-top: 60px;
-  margin-left: 28px;
 }
 
 .most_popular_list {
@@ -484,9 +486,6 @@ footer a:hover {
 
 @media screen and (min-width: 768px) {
   /* Tablette */
-  .register_2 {
-    display: none;
-  }
 
   body {
     padding: 20px;
@@ -502,10 +501,6 @@ footer a:hover {
   }
   .liens li:nth-child(3) {
     order: 2;
-  }
-
-  .register_2 {
-    display: none;
   }
 
   .logo {
@@ -601,10 +596,6 @@ footer a:hover {
     justify-content: space-between;
   }
 
-  .classement {
-    margin-left: 28px;
-  }
-
   /* Les plus populaires */
 
   .most_popular {
@@ -638,6 +629,9 @@ footer a:hover {
 
   .description {
     width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
 
   /* Activités */
@@ -707,6 +701,7 @@ footer a:hover {
 }
 
 @media screen and (min-width: 1200px) {
+  /* Ordinateurs */
   body {
     max-width: fit-content;
     margin-left: auto;
@@ -720,11 +715,6 @@ footer a:hover {
   .popular_room_image {
     width: 150px;
     height: 150px;
-  }
-
-  .classement_most_popular {
-    margin-top: 40px;
-    margin-left: 20px;
   }
 
   .description h2 {
@@ -818,6 +808,7 @@ footer a:hover {
 
   footer {
     flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -863,10 +854,6 @@ footer a:hover {
   }
   .liens li:nth-child(3) {
     order: 2;
-  }
-
-  .register_2 {
-    display: none;
   }
 
   .logo {
@@ -970,10 +957,20 @@ footer a:hover {
   }
 
   .classement {
-    margin-left: 28px;
+    display: flex;
+    justify-content: space-between;
+    width: 70px;
+    margin-left: 30px;
     margin-top: 10px;
   }
 
+  .blue_star {
+    color:#0065fc;
+  }
+
+  .grey_star {
+    color: #e2e2e2;
+  }
   /* Les plus populaires */
 
   .most_popular {
@@ -999,11 +996,6 @@ footer a:hover {
 
   .most_popular_list a:hover {
     box-shadow: none;
-  }
-
-  .classement_most_popular {
-    margin-top: 13px;
-    margin-left: 20px;
   }
 
   .most_popular a {
