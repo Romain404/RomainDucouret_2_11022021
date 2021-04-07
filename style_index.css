@@ -49,6 +49,10 @@ nav {
   object-fit: fill;
 }
 
+.reservia:hover {
+  border: none;
+}
+
 .reservia {
   width: fit-content;
 }
@@ -218,10 +222,12 @@ body {
   border: none;
   border-bottom-left-radius: 12px;
   border-top-left-radius: 12px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
   border: solid 2px #f2f2f2;
-  background: url("images/logo/location_logo.png") no-repeat center;
   background-color: #f2f2f2;
-  font-size: 0;
+  color: black;
+  height: inherit;
 }
 
 .search_button {
@@ -237,111 +243,44 @@ body {
 
 /* Filtres */
 
-input[type="checkbox"] {
+button {
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearence: none;
 }
 
-input[type="checkbox"] {
+button {
   border-radius: 30px;
-  height: 41px;
-  width: 41px;
+  height: 42px;
+  width: 42px;
   background: #deebff;
   border: 1px solid #deebff;
+  color:#0065fc;;
   outline: none;
   margin: 0;
   align-self: flex-end;
 }
 
-.eco,
-.family,
-.romantic,
-.animals {
-  display: flex;
-  border: solid 1px #d9d9d9;
-  border-radius: 20px;
-  margin: 0;
-  padding: 0;
-  padding-right: 10px;
+.eco, .family, .animals, .romantic {
+  border: solid 2px #f2f2f2;
+  border-radius: 30px;
+  width: max-content;
+  padding-right: 20px;
   border-left: none;
-  margin-left: 10px;
-  margin-right: 10px;
-  height: 40px;
-  width: fit-content;
-  margin-bottom: 10px;
-}
-
-.family:checked {
-  flex-direction: row-reverse;
-}
-
-label {
-  align-self: center;
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-right: 15px;
 }
 
 .filters_list {
   display: flex;
-  flex-wrap: wrap;
-}
-
-.filters {
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-#romantic {
-  background: url("images/logo/romantic_logo.PNG") no-repeat center;
-  background-color: #deebff;
-}
-
-#family {
-  background: url("images/logo/familial_logo.PNG") no-repeat center;
-  background-color: #deebff;
-}
-
-#eco {
-  background: url("images/logo/cash_logo.PNG") no-repeat center;
-  background-color: #deebff;
-}
-
-#animals {
-  background: url("images/logo/animals_logo.PNG") no-repeat center;
-  background-color: #deebff;
-}
-
-#eco:active,
-#eco:focus,
-#family:active,
-#family:focus,
-#romantic:active,
-#romantic:focus,
-#animals:active,
-#animals:focus,
-.location_button:active,
-.location_button:focus,
-.search_button:active,
-.search_button:focus,
-.city_textfield:active,
-.city_textfield:focus {
-  outline: none;
-}
-
-.eco:hover,
-.family:hover,
-.animals:hover,
-.romantic:hover {
-  flex-direction: row-reverse;
-  padding-right: 0;
-  padding-left: 10px;
-  transition-duration: 1s;
 }
 
 .filters p {
-  font-family: "Raleway-Bold";
+  margin-bottom: 0;
+  margin-right: 20px;
+  font-weight: bold;
 }
+
+/* Infos */
 
 .city_info {
   display: flex;
