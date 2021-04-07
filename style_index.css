@@ -40,6 +40,7 @@ nav {
   padding-inline-start: 0;
   margin-top: 0;
   flex-wrap: wrap;
+  margin-top: 25px;
 }
 
 .logo {
@@ -203,7 +204,7 @@ body {
   height: 45px;
   border: solid 1px #f2f2f2;
   border-radius: 15px;
-  width: fit-content;
+  width: max-content;
 }
 
 .city_textfield {
@@ -456,6 +457,7 @@ label {
   margin-bottom: 25px;
   height: fit-content;
   background-color: #f2f2f2;
+  max-width: 340px;
 }
 
 /* Footer */
@@ -604,7 +606,11 @@ footer a:hover {
   }
 
   .hebergement_list {
-    justify-content: space-between;
+    justify-content: center;
+  }
+
+  .hebergement_link h4 {
+    justify-content: ;
   }
 
   /* Les plus populaires */
@@ -667,6 +673,10 @@ footer a:hover {
     flex-direction: row;
     justify-content: space-between;
   }
+
+  .activities a {
+    max-width: none;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -676,13 +686,17 @@ footer a:hover {
     flex-wrap: nowrap;
   }
 
+  .description {
+    width: 400px;
+  }
+
   .register {
     margin-right: 0;
   }
 
   .popular_room_image {
-    width: 400px;
-    height: 300px;
+    width: 300px;
+    height: 200px;
   }
 
   .description h2 {
@@ -724,7 +738,7 @@ footer a:hover {
 @media screen and (min-width: 1200px) {
   /* Ordinateurs */
   body {
-    max-width: fit-content;
+    max-width: max-content;
     margin-left: auto;
     margin-right: auto;
   }
@@ -851,7 +865,7 @@ footer a:hover {
   /* Ordinateurs XXL */
 
   body {
-    max-width: fit-content;
+    max-width: max-content;
     margin-left: auto;
     margin-right: auto;
   }
