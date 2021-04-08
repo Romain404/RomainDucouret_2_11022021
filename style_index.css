@@ -209,6 +209,7 @@ body {
   text-decoration: none;
   color: black;
   border-radius: 25px;
+  width: 100%;
 }
 
 .hebergement_list p {
@@ -251,7 +252,7 @@ body {
   border-radius: 12px;
   border: none;
   font-size: 0;
-  background: no-repeat url("images/logo/search_logo.PNG") center;
+  background: no-repeat url("images/search_logo.PNG") center;
   background-color: #0065fc;
   background-size: 18px;
 }
@@ -274,6 +275,12 @@ button {
   outline: none;
   margin: 0;
   align-self: flex-end;
+}
+
+.filters_list button:hover {
+  color: #838383;
+  background-color: #f2f2f2;
+  border-color: #f2f2f2;
 }
 
 .eco,
@@ -495,6 +502,7 @@ footer a:hover {
     border-bottom: none;
     width: fit-content;
     margin-left: 50px;
+    width: auto;
   }
   .top_bar {
     flex-wrap: nowrap;
@@ -539,7 +547,7 @@ footer a:hover {
     width: 320px;
   }
   .hebergement_list a {
-    width: fit-content;
+    width: max-content;
   }
   .hebergement_list p {
     width: 100%;
@@ -591,7 +599,7 @@ footer a:hover {
     border-top-right-radius: 20px;
   }
   .activities_list a {
-    width: fit-content;
+    width: max-content;
     background-color: white;
     box-shadow: -1px 2px 27px 0px rgba(189, 189, 189, 0.65);
   }
@@ -682,9 +690,6 @@ footer a:hover {
     padding-top: 10px;
   }
 
-  #register {
-    flex: 2;
-  }
   .hebergement {
     flex-direction: row;
   }
@@ -759,6 +764,7 @@ footer a:hover {
     flex-wrap: wrap;
     max-height: 600px;
     margin: 0;
+    justify-content: center;
   }
   .activitie_image_large {
     width: 280px;
@@ -853,6 +859,7 @@ footer a:hover {
     width: fit-content;
     margin-left: 50px;
     text-align: center;
+    width: auto;
   }
   .top_bar {
     flex-wrap: nowrap;
