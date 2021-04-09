@@ -551,12 +551,16 @@ footer a:hover {
   }
   .hebergement_list p {
     width: 100%;
+    padding-left: 60px;
   }
   .hebergement_list {
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
   }
-  .hebergement_link h4 {
-    justify-content: ;
+  .hebergement_list h4 {
+    width: 100%;
+    text-align: center;
   }
   /* Les plus populaires */
   .most_popular {
@@ -606,10 +610,15 @@ footer a:hover {
   .activities_list {
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding: 20px;
   }
   .activities a {
     max-width: none;
+  }
+
+  .activities p {
+    padding-left: 60px;
   }
 }
 
