@@ -132,6 +132,7 @@ body {
 #register {
   align-self: center;
   padding-right: 10px;
+  padding-left: 10%;
 }
 
 /* Hebergements */
@@ -203,6 +204,10 @@ body {
   margin-left: 10px;
   margin-bottom: 0px;
   margin-top: 5px;
+}
+
+.hebergement_list h4 {
+  margin-left: 20px;
 }
 
 .hebergement_list a {
@@ -343,6 +348,10 @@ button {
   align-self: center;
 }
 
+.most_popular_title h2 {
+  font-size: 1.6em;
+}
+
 .popular_room_image {
   width: 150px;
   height: 150px;
@@ -367,7 +376,7 @@ button {
   font-family: "Raleway-Bold";
 }
 
-.most_popular h2 {
+.description h2 {
   font-size: 0.8em;
 }
 
@@ -405,12 +414,13 @@ button {
   border-top-right-radius: 20px;
 }
 
-.activities p {
+.activities h2 {
   font-size: 1.6em;
   font-family: "Raleway-Bold";
+  padding-left: 0;
 }
 
-.activities h2 {
+.activities h3 {
   font-size: 1em;
   margin-left: 20px;
 }
@@ -426,7 +436,7 @@ button {
 
 /* Footer */
 
-footer h1 {
+footer h2 {
   font-size: 1.1em;
   font-family: "Raleway-Bold";
 }
@@ -462,7 +472,7 @@ footer a:hover {
 }
 
 @media screen and (min-width: 768px) {
-  /* Tablette */
+  /* Tablettes */
   body {
     padding: 20px;
   }
@@ -611,14 +621,14 @@ footer a:hover {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
-    padding: 20px;
   }
   .activities a {
     max-width: none;
   }
 
-  .activities p {
+  .activities h2 {
     padding-left: 60px;
+    font-size: 1.5em;
   }
 }
 
@@ -800,7 +810,7 @@ footer a:hover {
 }
 
 @media screen and (min-width: 1400px) {
-  /* Ordinateurs XXL */
+  /* Ordinateurs XL */
   body {
     max-width: max-content;
     margin-left: auto;
