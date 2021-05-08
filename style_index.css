@@ -19,6 +19,9 @@
   font-family: "Raleway";
 }
 
+.title h2 {
+  padding-left: 0;
+}
 /* Téléphone */
 .title {
   padding-left: 20px;
@@ -36,6 +39,7 @@ header {
   display: flex;
 }
 
+
 nav {
   display: flex;
   width: 100%;
@@ -50,6 +54,10 @@ nav {
   flex-wrap: wrap;
   margin-top: 10px;
   justify-content: space-between;
+}
+
+#ancre-2, #ancre-1 {
+  border-top: none;
 }
 
 .logo {
@@ -109,7 +117,9 @@ body {
 
 .top_bar a:hover,
 #hebergement:hover,
-#activities:hover, .hebergement_link:hover, .activities_link:hover {
+#activities:hover,
+.hebergement_link:hover,
+.activities_link:hover {
   border-color: #0065fc;
   color: #0065fc;
 }
@@ -327,6 +337,7 @@ button {
   margin-bottom: 0;
   margin-right: 20px;
   font-weight: bold;
+  align-self: center;
 }
 
 /* Infos */
@@ -493,7 +504,7 @@ footer a:hover {
 
 @media screen and (min-width: 768px) {
   /* Tablettes */
-  
+
   /* Nav */
   .liens li:nth-child(1) {
     order: 4;
@@ -713,6 +724,16 @@ footer a:hover {
     justify-content: end;
     flex-wrap: nowrap;
   }
+
+  .hebergement_link:hover, .activities_link:hover {
+    border-top: #0065fc solid 2px;
+  }
+
+  .hebergement_link, .activities_link {
+    padding-top: 18px;
+  }
+
+
   .eco,
   .family,
   .animals,
@@ -849,6 +870,16 @@ footer a:hover {
     padding-left: 10px;
     padding-right: 10px;
   }
+
+  .hebergement_link:hover, .activities_link:hover {
+    border-top: #0065fc solid 2px;
+  }
+
+  .hebergement_link, .activities_link, #ancre-2 {
+    padding-top: 18px;
+  }
+
+
   .eco,
   .family,
   .animals,
@@ -1052,7 +1083,6 @@ footer a:hover {
     justify-content: space-between;
   }
 }
-
 
 @media screen and (min-width: 522px) and (max-width: 768px) {
   #register {
