@@ -856,7 +856,7 @@ footer a:hover {
   /* Ordinateurs XL */
   body {
     max-width: max-content;
-    margin-left: auto;
+    margin-left: 0;
     margin-right: auto;
   }
   /* Filtres */
@@ -996,6 +996,14 @@ footer a:hover {
     margin-top: 30px;
     width: 100%;
   }
+  
+  .activities {
+    margin-left: 20px;
+  }
+
+  .hebergement_list h3 {
+    padding-left: 20px;
+  }
   .classement {
     display: flex;
     justify-content: space-between;
@@ -1081,6 +1089,13 @@ footer a:hover {
   footer {
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .content {
+    padding: 20px;
+    padding-right: 0;
   }
 }
 
@@ -1113,5 +1128,11 @@ footer a:hover {
   .most_popular {
     border-radius: 20px;
     margin: 40px;
+  }
+}
+
+@media screen and (min-width: 468px) and (max-width: 521px) {
+  .register {
+    margin-left: 30px;
   }
 }
