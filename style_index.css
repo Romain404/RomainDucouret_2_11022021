@@ -712,11 +712,6 @@ footer a:hover {
 
 @media screen and (min-width: 1200px) {
   /* Ordinateurs */
-  body {
-    max-width: max-content;
-    margin-left: auto;
-    margin-right: auto;
-  }
   .register:hover {
     border: none;
   }
@@ -854,11 +849,7 @@ footer a:hover {
 
 @media screen and (min-width: 1400px) {
   /* Ordinateurs XL */
-  body {
-    max-width: max-content;
-    margin-left: 0;
-    margin-right: auto;
-  }
+  
   /* Filtres */
   .search_button {
     background-image: none;
@@ -1096,6 +1087,8 @@ footer a:hover {
   .content {
     padding: 20px;
     padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
