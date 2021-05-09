@@ -1047,6 +1047,10 @@ footer a:hover {
     max-height: 600px;
     margin: 0;
   }
+
+  .activities {
+    max-width: 1442px;
+  }
   .activitie_image_large {
     width: 340px;
     height: 450px;
