@@ -849,6 +849,10 @@ footer a:hover {
 
 @media screen and (min-width: 1400px) {
   /* Ordinateurs XL */
+
+  header {
+    max-width: 95%;
+  }
   
   /* Filtres */
   .search_button {
@@ -968,7 +972,7 @@ footer a:hover {
     margin-right: 40px;
     padding: 20px;
     flex-direction: row;
-    min-width: 880px;
+    min-width: 82%;
     margin-left: 0;
   }
   .hebergement_list a {
@@ -978,8 +982,8 @@ footer a:hover {
     box-shadow: none;
   }
   .room_image {
-    width: 250px;
-    height: 120px;
+    width: 300px;
+    height: 150px;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
   }
@@ -1083,7 +1087,7 @@ footer a:hover {
   /* Footer */
   footer {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     padding-right: 0;
   }
@@ -1093,6 +1097,7 @@ footer a:hover {
     padding-right: 0;
     margin-left: auto;
     margin-right: auto;
+    max-width: 70%;
   }
 }
 
