@@ -661,6 +661,10 @@ footer a:hover {
   .activities h2 {
     font-size: 1.5em;
   }
+  footer {
+    justify-content: space-around;
+    flex-direction: row;
+  }
 }
 
 @media screen and (min-width: 992px) {
